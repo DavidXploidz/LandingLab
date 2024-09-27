@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/');
+    src: local('Blender Pro Medium'), local('BlenderPro-Medium'),
+        url('/assets/?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-Medium.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-Medium.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/fonts/BlenderPro-ThinItalic.eot');
+    src: local('Blender Pro Thin Italic'), local('BlenderPro-ThinItalic'),
+        url('/assets/fonts/BlenderPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-ThinItalic.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-ThinItalic.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/fonts/BlenderPro-Heavy.eot');
+    src: local('Blender Pro Heavy'), local('BlenderPro-Heavy'),
+        url('/assets/fonts/BlenderPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-Heavy.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-Heavy.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blender Pro Book';
+    src: url('/assets/fonts/BlenderPro-BookItalic.eot');
+    src: local('Blender Pro Book Italic'), local('BlenderPro-BookItalic'),
+        url('/assets/fonts/BlenderPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-BookItalic.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-BookItalic.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Blender Pro Book';
+    src: url('/assets/fonts/BlenderPro-Book.eot');
+    src: local('Blender Pro Book'), local('BlenderPro-Book'),
+        url('/assets/fonts/BlenderPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-Book.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-Book.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/fonts/BlenderPro-Bold.eot');
+    src: local('Blender Pro Bold'), local('BlenderPro-Bold'),
+        url('/assets/fonts/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-Bold.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-Bold.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/fonts/BlenderPro-Thin.eot');
+    src: local('Blender Pro Thin'), local('BlenderPro-Thin'),
+        url('/assets/fonts/BlenderPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-Thin.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-Thin.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/fonts/BlenderPro-MediumItalic.eot');
+    src: local('Blender Pro Medium Italic'), local('BlenderPro-MediumItalic'),
+        url('/assets/fonts/BlenderPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-MediumItalic.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-MediumItalic.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Blender Pro';
+    src: url('/assets/fonts/BlenderPro-BoldItalic.eot');
+    src: local('Blender Pro Bold Italic'), local('BlenderPro-BoldItalic'),
+        url('/assets/fonts/BlenderPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/BlenderPro-BoldItalic.woff2') format('woff2'),
+        url('/assets/fonts/BlenderPro-BoldItalic.woff') format('woff'),
+        url('/assets/fonts/BlenderPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+:root{
+    /*********************** Web site colors ********************/
+    /* Brands colors */
+    --color-primary-brand: "#fdf008 - 500";
+    --color-primary-100: #FEFDCD;
+    --color-primary-200: #FEFB9C;
+    --color-primary-300: #FEF86A;
+    --color-primary-400: #FDF545;
+    --color-primary-500: #FDF008; /* main brand color*/
+    --color-primary-600: #D9CD05;
+    --color-primary-700: #B6AA04;
+    --color-primary-800: #928802;
+    --color-primary-900: #797001;
+
+    --color-secondary-brand: "#00eeff - 500 ";
+    --color-secondary-100: #CCFFF1;
+    --color-secondary-200: #99FFEC;
+    --color-secondary-300: #66FFEF;
+    --color-secondary-400: #3FFFFB;
+    --color-secondary-500: #00EEFF; /* seconda brand color*/
+    --color-secondary-600: #00BADB;
+    --color-secondary-700: #008CB7;
+    --color-secondary-800: #006593;
+    --color-secondary-900: #00497A;
+
+    /* Neutral colors*/
+    --color-neutral-100: #F0F0F3;
+    --color-neutral-200: #E3E3E7;
+    --color-neutral-300: #B3B3B8;
+    --color-neutral-400: #6E6E72;
+    --color-neutral-500: #141415;
+    --color-neutral-600: #0E0E12;
+    --color-neutral-700: #0A0A0F;
+    --color-neutral-800: #06060C;
+    --color-neutral-900: #03030A;
+    /* Supporting colors */
+    --success: hsl(112, 63%, 52%);
+    --danger: hsl(11, 95%, 47%);
+
+    /* Steps sizes font */
+    --ff: 'Blender Pro';
+    --step--3: clamp(0.64rem, 0.6549rem + -0.0192vw, 0.651rem);
+    --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+    --step-6: clamp(3.3592rem, 2.8691rem + 2.4507vw, 4.7684rem);
+
+    /* Spacing */
+    --space-xxs: .25rem;
+    --space-xs: .5rem;
+    --space-s: .75rem;
+    --space-m: 1rem;
+    --space-l: 1.25rem;
+    --space-xl: 1.75rem;
+    --space-xxl: 2.5rem;
+    /* Utilities */
+    --transition: 0.3s ease-in-out;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body{
+    font-size: var(--step-0);
+    font-family: var(--ff);
+    min-height: 100vh;
+    background-color: var(--color-neutral-500);
+    color: var(--color-neutral-300);
+}
+img, picture, svg, video{
+    display: block;
+    max-width: 100%;
+}
+input, textarea, button, select{
+    font: inherit;
+}
+h1{
+    font-size: var(--step-6);
+    margin-block: var(--space-m);
+}
+h2{
+    font-size: var(--step-5);
+    margin-block: var(--space-s);
+}
+h3{
+    font-size: var(--step-4);
+    margin-block: var(--space-xs);  
+}
+:is(h1, h2, h3){
+    text-wrap: balance;
+    color: var(--color-neutral-100);
+    line-height: 1.2;
+}
+p{
+    font: var(--step-0);
+    margin-bottom: var(--space-xs);
+    text-wrap: pretty;
+    line-height: 1.6;
+}
+/* Containers */
+/* Mobile container utility class: */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* xs */
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+/* sm */
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+/* md */
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+/* lg */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+/* xl */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+/* Utilidades */
+.section{
+    padding-block: var(--space-xxl);
+}
+.grid{
+    display: grid;
+    gap: var(--space-m);
+    grid-template-columns: repeat(auto-fit,minmax(min(400px, 100%), 1fr));
+}
+.text-center{
+    text-align: center;
+}
+.btn{
+    min-height: 40px;
+    padding: var(--space-s) var(--space-m);
+    border: none;
+    background-color: transparent;
+    min-width: 200px;
+    font-size: var(--step-1);
+    font-weight: 600;
+}
+.btn-primary{
+    background-color: var(--color-primary-500);
+    color: var(--color-neutral-700);
+    transition: background-color var(--transition);
+    &:hover{
+        background-color: var(--color-primary-700);
+        color: var(--color-neutral-500);
+    }
+}
+/* Menu styles */
+.menu{
+    background-color: var(--color-neutral-500);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__logo{
+    max-width: 60px;
+}
+.menu__right {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+    color: var(--color-neutral-900);
+}
+.menu__head {
+    text-decoration: none;
+    color: var(--color-neutral-100);
+    font-size: var(--step-0);
+}
+.menu__head:hover{
+    color: var(--color-primary-500);
+}
+.menu__right button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+.menu__sub {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 200px;
+    height: fit-content;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--color-neutral-900);
+    border-radius: 2mm;
+    box-shadow: rgba(0, 0, 0, 0.27) 0px 15px 38px,
+      rgba(0, 0, 0, 0.2) 0px 10px 12px;
+}
+.menu__sub__item {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-neutral-100);
+    font-weight: 600;
+    padding: 10px 0;
+}
+.menu__sub__item:hover {
+    background: var(--color-primary-500);
+    color: var(--color-neutral-700);
+}
+.menu__sub__item {
+    display: none;
+}
+@media only screen and (max-width: 560px) {
+    .menu__head {
+        display: none;
+    }
+    .menu__sub__item {
+        display: block;
+    }
+    .menu__right button{
+        display: flex;
+    }
+    .menu{
+        width: 100%;
+    }
+}
+/* Header styles */
+.header{
+    min-height: calc(100dvh - 80px);
+    background-color: var(--color-neutral-500);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header__img{
+    transform: scaleX(-1);
+}
+.header__text{
+    color: var(--color-neutral-300);
+    margin-bottom: var(--space-l);
+    font-size: var(--step-1);
+    text-wrap: balance;
+}
+@media (min-width: 768px){ 
+    .header{
+        grid-template-columns: 60% 40%;
+        text-align: left;
+    }
+}
+/* Nosotros styles */
+.nosotros__content{
+    display: grid;
+    grid-template-areas: 
+        "nosotrosUl nosotrosUl"
+        "nosotrosImage nosotrosImage"
+    ;
+    align-items: center;
+}
+@media (min-width: 768px){ 
+    .nosotros__content{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "nosotrosImage nosotrosUl"
+        ;
+    }
+}
+.nosotros__image{
+    grid-area: nosotrosImage;
+}
+.nosotros__ul{
+    display: grid;
+    row-gap: var(--space-xs);
+    grid-area: nosotrosUl;
+}
+.nosotros__li{
+    &::marker{
+        font-size: var(--step--2);
+        color: var(--color-secondary-500);
+    }
+}
