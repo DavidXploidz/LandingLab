@@ -309,6 +309,7 @@ p{
 }
 .menu__head:hover{
     color: var(--color-primary-500);
+    cursor: pointer;
 }
 .menu__right button {
     width: 40px;
@@ -348,6 +349,7 @@ p{
 .menu__sub__item:hover {
     background: var(--color-primary-500);
     color: var(--color-neutral-700);
+    cursor: pointer;
 }
 .menu__sub__item {
     display: none;
