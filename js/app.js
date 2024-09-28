@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const nosotros_tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.nosotros',
-            markers: true,
             start: 'top 80%',
             end: 'top 20%',
             scrub: 1,
