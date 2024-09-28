@@ -1,16 +1,16 @@
-// Submenu
-let subMenu = document.querySelector(".menu__sub");
-
-window.addEventListener("click", (e) => {
-    e.preventDefault()
-    if(e.target.closest(".toggle")){
-        subMenu.style.display = "flex";
-    }else{
-        subMenu.style.display = "none";
-    }
-});
-
 document.addEventListener("DOMContentLoaded", (event) => {
+
+    // Submenu
+    let subMenu = document.querySelector(".menu__sub");
+
+    window.addEventListener("click", (e) => {
+        if(e.target.closest(".toggle")){
+            subMenu.style.display = "flex";
+        }else{
+            subMenu.style.display = "none";
+        }
+    });
+    
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
     // Header animations
