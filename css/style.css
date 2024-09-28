@@ -2,10 +2,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/');
     src: local('Blender Pro Medium'), local('BlenderPro-Medium'),
-        url('/assets/?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-Medium.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-Medium.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-Medium.ttf') format('truetype');
+        url('./assets/?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-Medium.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-Medium.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -13,10 +13,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/fonts/BlenderPro-ThinItalic.eot');
     src: local('Blender Pro Thin Italic'), local('BlenderPro-ThinItalic'),
-        url('/assets/fonts/BlenderPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-ThinItalic.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-ThinItalic.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-ThinItalic.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-ThinItalic.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-ThinItalic.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
@@ -24,10 +24,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/fonts/BlenderPro-Heavy.eot');
     src: local('Blender Pro Heavy'), local('BlenderPro-Heavy'),
-        url('/assets/fonts/BlenderPro-Heavy.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-Heavy.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-Heavy.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-Heavy.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-Heavy.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-Heavy.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-Heavy.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -35,10 +35,10 @@
     font-family: 'Blender Pro Book';
     src: url('./assets/fonts/BlenderPro-BookItalic.eot');
     src: local('Blender Pro Book Italic'), local('BlenderPro-BookItalic'),
-        url('/assets/fonts/BlenderPro-BookItalic.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-BookItalic.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-BookItalic.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-BookItalic.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-BookItalic.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-BookItalic.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-BookItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
@@ -46,10 +46,10 @@
     font-family: 'Blender Pro Book';
     src: url('./assets/fonts/BlenderPro-Book.eot');
     src: local('Blender Pro Book'), local('BlenderPro-Book'),
-        url('/assets/fonts/BlenderPro-Book.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-Book.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-Book.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-Book.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-Book.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-Book.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-Book.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -57,10 +57,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/fonts/BlenderPro-Bold.eot');
     src: local('Blender Pro Bold'), local('BlenderPro-Bold'),
-        url('/assets/fonts/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-Bold.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-Bold.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-Bold.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-Bold.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-Bold.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -68,10 +68,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/fonts/BlenderPro-Thin.eot');
     src: local('Blender Pro Thin'), local('BlenderPro-Thin'),
-        url('/assets/fonts/BlenderPro-Thin.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-Thin.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-Thin.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-Thin.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-Thin.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-Thin.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
@@ -79,10 +79,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/fonts/BlenderPro-MediumItalic.eot');
     src: local('Blender Pro Medium Italic'), local('BlenderPro-MediumItalic'),
-        url('/assets/fonts/BlenderPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-MediumItalic.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-MediumItalic.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-MediumItalic.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-MediumItalic.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
@@ -90,10 +90,10 @@
     font-family: 'Blender Pro';
     src: url('./assets/fonts/BlenderPro-BoldItalic.eot');
     src: local('Blender Pro Bold Italic'), local('BlenderPro-BoldItalic'),
-        url('/assets/fonts/BlenderPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/BlenderPro-BoldItalic.woff2') format('woff2'),
-        url('/assets/fonts/BlenderPro-BoldItalic.woff') format('woff'),
-        url('/assets/fonts/BlenderPro-BoldItalic.ttf') format('truetype');
+        url('./assets/fonts/BlenderPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BlenderPro-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/BlenderPro-BoldItalic.woff') format('woff'),
+        url('./assets/fonts/BlenderPro-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
