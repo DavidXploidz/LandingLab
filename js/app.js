@@ -2,6 +2,7 @@
 let subMenu = document.querySelector(".menu__sub");
 
 window.addEventListener("click", (e) => {
+    e.preventDefault()
     if(e.target.closest(".toggle")){
         subMenu.style.display = "flex";
     }else{
