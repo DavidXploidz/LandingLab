@@ -6,6 +6,7 @@
     <meta name="description" content="Con LandingLab puedes hacer que tu negocio luzca hermoso. Nos dedicamos a hacer paginas web llamativas">
     <title>LandingLab</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <nav class="menu container">
@@ -57,37 +58,66 @@
     </main>
     <section class="section proyectos container" id="proyectos">
         <h2 class="text-center">Proyectos</h2>
-        <div class="grid">
-            <article class="card">
-                <figure>
-                    <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
-                </figure>
-                <section class="card__content">
-                    <h3 class="card__title">GatFlix</h3>
-                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, laborum.</p>
-                    <a href="https://davidxploidz.github.io/Modern_Landing/" target="_blank" class="btn btn-outline-secondary">Demo</a>
-                </section>
-            </article>
-            <article class="card">
-                <figure>
-                    <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
-                </figure>
-                <section class="card__content">
-                    <h3 class="card__title">SneakerShop</h3>
-                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, laborum.</p>
-                    <a href="https://davidxploidz.github.io/Sneakers/" target="_blank" class="btn btn-outline-secondary">Demo</a>
-                </section>
-            </article>
-            <article class="card">
-                <figure>
-                    <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
-                </figure>
-                <section class="card__content">
-                    <h3 class="card__title">GatFlix</h3>
-                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, laborum.</p>
-                    <a href="/" target="_blank" class="btn btn-outline-secondary">Demo</a>
-                </section>
-            </article>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <article class="card swiper-slide">
+                    <figure>
+                        <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
+                    </figure>
+                    <section class="card__content">
+                        <h3 class="card__title">GatFlix</h3>
+                        <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugit quia autem beatae tenetur consequatur veniam vitae voluptatum cum quo.</p>
+                    </section>
+                    <footer class="card__bottom">
+                        <a href="https://davidxploidz.github.io/Modern_Landing/" target="_blank" class="btn btn-outline-secondary">Demo</a>
+                    </footer>
+                </article>
+                <article class="card swiper-slide">
+                    <figure>
+                        <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
+                    </figure>
+                    <section class="card__content">
+                        <h3 class="card__title">GatFlix</h3>
+                        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sed maiores praesentium mollitia nam placeat, enim consectetur earum quasi delectus quisquam adipisci incidunt ut voluptate?</p>
+                    </section>
+                    <footer class="card__bottom">
+                        <a href="https://davidxploidz.github.io/Modern_Landing/" target="_blank" class="btn btn-outline-secondary">Demo</a>
+                    </footer>
+                </article>
+                <article class="card swiper-slide">
+                    <figure>
+                        <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
+                    </figure>
+                    <section class="card__content">
+                        <h3 class="card__title">GatFlix</h3>
+                        <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugit quia autem beatae tenetur consequatur veniam vitae voluptatum cum quo.</p>
+                    </section>
+                    <footer class="card__bottom">
+                        <a href="https://davidxploidz.github.io/Modern_Landing/" target="_blank" class="btn btn-outline-secondary">Demo</a>
+                    </footer>
+                </article>
+                <article class="card swiper-slide">
+                    <figure>
+                        <img class="card__image" src="./assets/images/modern_landing.webp" alt="image project 1">
+                    </figure>
+                    <section class="card__content">
+                        <h3 class="card__title">GatFlix</h3>
+                        <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fugit quia autem beatae tenetur consequatur veniam vitae voluptatum cum quo.</p>
+                    </section>
+                    <footer class="card__bottom">
+                        <a href="https://davidxploidz.github.io/Modern_Landing/" target="_blank" class="btn btn-outline-secondary">Demo</a>
+                    </footer>
+                </article>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Progress slider -->
+            <div class="autoplay-progress">
+                <svg viewBox="0 0 48 48">
+                  <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
         </div>
     </section>
 </body>
@@ -96,4 +126,5 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>

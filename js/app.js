@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from('.header button', {y: -20, duration: 1.5, opacity: 0, filter: "blur(5px)", delay: .725})
     gsap.from('.header__img', {y: 80, duration: 1.5, opacity: 0, filter: "blur(5px)"})
 
-    // Nosotros animations
+    // Nosotros timeline
     const nosotros_tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.nosotros',
@@ -35,12 +35,64 @@ document.addEventListener("DOMContentLoaded", (event) => {
     items_ul.forEach(item => {
         nosotros_tl.from(item, {y: 200, opacity: 0, filter: "blur(5px)"})
     })
- });
+
+    // Sliders timeline
+    const slider_tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.proyectos',
+            start: 'top 80%',
+            end: 'top 20%',
+            scrub: 1,
+        }
+    })
+    slider_tl.from('.proyectos h2', {scaleY: 1.2, y: -100, opacity: 0, filter: "blur(5px)"})
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(function(card){
+        slider_tl.from(card, { opacity: 0, filter: "blur(10px)"})
+    })
+
+    // Sliders
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
+        breakpoints: {
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+        },
+        mousewheel: {
+            forceToAxis: true,
+        },
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+                progressCircle.style.setProperty("--progress", 1 - progress);
+                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+        }
+    });
+});
 
 function scrollToSection(section){
     const targetElement = document.getElementById(`${section}`);
     if (targetElement) {
-        gsap.to(window, { duration: 1, scrollTo: targetElement });
+        gsap.to(window, { duration: 1, scrollTo: targetElement, ease: "power1.out" });
     }else{
         alert(`No se encontró la sección con el ID: ${section}`);
     }
