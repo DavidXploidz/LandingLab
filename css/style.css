@@ -547,6 +547,7 @@ p{
     gap: var(--space-m);
     width: min(100%, 50rem);
     margin-inline: auto;
+    overflow: hidden;
 }
 .testimonios__card{
     border-radius: var(--space-m);
@@ -637,4 +638,9 @@ p{
         grid-column: 3 / 4;
         grid-row: 3 / 4;
     }
+}
+.glass{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }

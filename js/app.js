@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const nosotros_tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.nosotros',
-            start: 'top 80%',
-            end: 'top 20%',
+            start: 'top 60%',
+            end: 'top 0%',
             scrub: 1,
         }
     });
@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const slider_tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.proyectos',
-            start: 'top 80%',
-            end: 'top 20%',
+            start: 'top 60%',
+            end: 'top 0%',
             scrub: 1,
         }
     })
@@ -92,17 +92,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const test_tl = gsap.timeline({
         scrollTrigger: {
             trigger: '.testimonios',
-            start: 'top 70%',
-            end: 'top',
+            start: 'top 50%',
+            end: 'top -30%',
             scrub: 1,
-            markers: true,
         }
     })
     test_tl.from('.testimonios h2', {scaleY: 1.2, y: -100, opacity: 0, filter: "blur(5px)"})
-    const cards_test = document.querySelectorAll('.testimonios__card');
-    cards_test.forEach(function(card){
-        test_tl.from(card, { opacity: 0, filter: "blur(10px)"})
-    })
+    test_tl.from('.card-1', {y: 100, opacity: 0})
+    test_tl.from('.card-2', {x: 100, opacity: 0})
+    test_tl.from('.card-3', {x: -100, opacity: 0})
+    test_tl.from('.card-5', {y: 100, opacity: 0})
+    test_tl.from('.card-4', {y: 100, opacity: 0})
+
 });
 
 function scrollToSection(section){
