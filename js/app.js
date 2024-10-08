@@ -87,6 +87,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         }
     });
+
+    // Testimoniales timeline
+    const test_tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.testimonios',
+            start: 'top 70%',
+            end: 'top',
+            scrub: 1,
+            markers: true,
+        }
+    })
+    test_tl.from('.testimonios h2', {scaleY: 1.2, y: -100, opacity: 0, filter: "blur(5px)"})
+    const cards_test = document.querySelectorAll('.testimonios__card');
+    cards_test.forEach(function(card){
+        test_tl.from(card, { opacity: 0, filter: "blur(10px)"})
+    })
 });
 
 function scrollToSection(section){
