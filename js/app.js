@@ -17,7 +17,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from('.header h1', {y: -80, duration: 1.5, opacity: 0, filter: "blur(5px)"})
     gsap.from('.header__text', {y: -40, duration: 1.5, opacity: 0, filter: "blur(5px)", delay: .375})
     gsap.from('.header button', {y: -20, duration: 1.5, opacity: 0, filter: "blur(5px)", delay: .725})
-    gsap.from('.header__img', {y: 80, duration: 1.5, opacity: 0, filter: "blur(5px)"})
+    gsap.from('.header__bg', {duration: 1, opacity: 0.8, scale: 0.8, filter: "blur(5px)"})
+    gsap.from('.header__bulb', {duration: 2, opacity: 0.7, filter: "blur(1px)", repeat: 20, yoyo: true, delay: -1})
+    gsap.from('.header__person', {y: 15, duration: 3, repeat: 20, yoyo: true, delay: -1})
+
 
     // Nosotros timeline
     const nosotros_tl = gsap.timeline({
