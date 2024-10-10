@@ -32,11 +32,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
     nosotros_tl.from('.nosotros h2', {y: -100, opacity: 0, filter: "blur(5px)"})
-    nosotros_tl.from('.nosotros__image', {x: -200, opacity: 0, filter: "blur(5px)"})
+    nosotros_tl.from('.nosotros__image', {opacity: 0, filter: "blur(5px)"})
 
     const items_ul = document.querySelectorAll('.nosotros__li')
     items_ul.forEach(item => {
         nosotros_tl.from(item, {y: 200, opacity: 0, filter: "blur(5px)"})
+    })
+    // Fondo
+    gsap.from('.nosotros__bg', {
+        rotation: 30, scale: 0.9, duration: 5, filter: "blur(1px)", repeat: 20, yoyo: true, delay: -1,
+        scrollTrigger: {
+            trigger: '.nosotros__content',
+            start: 'top 60%',
+            end: 'top 0%',
+        }
+    })
+    gsap.from('.nosotros__user', {
+        scale: 0.85, duration: 3, repeat: 20, yoyo: true, delay: -1,
+        scrollTrigger: {
+            trigger: '.nosotros__content',
+            start: 'top 60%',
+            end: 'top 0%',
+        }
     })
 
     // Sliders timeline
