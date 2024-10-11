@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
     // Fondo
     gsap.from('.nosotros__bg', {
-        rotation: 30, scale: 0.9, duration: 5, filter: "blur(1px)", repeat: 20, yoyo: true, delay: -1,
+        rotation: 10, scale: 0.9, duration: 5, filter: "blur(1px)", repeat: 20, yoyo: true, delay: -1,
         scrollTrigger: {
             trigger: '.nosotros__content',
             start: 'top 60%',
