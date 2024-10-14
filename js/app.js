@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from('.header button', {y: -20, duration: 1.5, opacity: 0, filter: "blur(5px)", delay: .725})
     gsap.from('.header__bg', {duration: 1, opacity: 0.8, scale: 0.8, filter: "blur(5px)"})
     gsap.from('.header__bulb', {duration: 2, opacity: 0.7, filter: "blur(1px)", repeat: 20, yoyo: true, delay: -1})
-    gsap.from('.header__person', {y: 15, duration: 3, repeat: 20, yoyo: true, delay: -1})
+    gsap.from('.header__person', {y: 50, duration: 3, repeat: 20, yoyo: true, delay: -1})
 
 
     // Nosotros timeline
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: '.testimonios',
             start: 'top 50%',
-            end: 'top -30%',
+            end: 'top 0%',
             scrub: 1,
         }
     })
