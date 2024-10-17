@@ -702,6 +702,10 @@ p{
     display: grid;
     gap: var(--space-s);
 }
+.footer__social{
+    display: flex;
+    column-gap: var(--space-s);
+}
 .footer__slogan{
     font-size: var(--step-2);
     text-transform: uppercase;
