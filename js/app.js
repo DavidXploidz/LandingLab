@@ -23,21 +23,41 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
     // Nosotros timeline
-    const nosotros_tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.nosotros',
-            start: 'top 60%',
-            end: 'top 0%',
-            scrub: 1,
+    gsap.from('.nosotros h2', {
+            scrollTrigger: {
+                trigger: ".nosotros",
+                start: "top 50%",
+                toggleActions: "play pause play reverse",
+            },
+            y: -100, 
+            opacity: 0, 
+            filter: "blur(5px)"
         }
-    });
-    nosotros_tl.from('.nosotros h2', {y: -100, opacity: 0, filter: "blur(5px)"})
-    nosotros_tl.from('.nosotros__image', {opacity: 0, filter: "blur(5px)"})
+    );
+    gsap.from('.nosotros__image', {
+            scrollTrigger: {
+                trigger: ".nosotros__image",
+                start: "top 50%",
+                toggleActions: "play pause play reverse",
+            },
+            opacity: 0, 
+            filter: "blur(5px)"
+        }
+    );
 
-    const items_ul = document.querySelectorAll('.nosotros__li')
-    items_ul.forEach(item => {
-        nosotros_tl.from(item, {y: 200, opacity: 0, filter: "blur(5px)"})
-    })
+    const items_ul = gsap.utils.toArray(".nosotros__li")
+    items_ul.forEach((item, i) => {
+        gsap.from(item, {
+            scrollTrigger: {
+                trigger: item,
+                start: "top 70%",
+                toggleActions: "play pause play reverse",
+            },
+            y: 20,
+            opacity: 0,
+            filter: "blur(5px)",
+        });
+    });
     // Fondo
     gsap.from('.nosotros__bg', {
         rotation: 10, scale: 0.9, duration: 5, filter: "blur(1px)", repeat: 20, yoyo: true, delay: -1,

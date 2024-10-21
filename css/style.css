@@ -758,6 +758,7 @@ p{
 .servicios__grid{
     display: grid;
     justify-content: center;
+    overflow-x: clip;
 }
 .servicios__item{
     display: grid;
