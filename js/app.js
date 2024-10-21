@@ -56,6 +56,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     })
 
+    // Services Timeline
+    gsap.from('.servicios h2', {
+            scrollTrigger: {
+                trigger: ".servicios",
+                start: "top 50%",
+                toggleActions: "play pause play reverse",
+            },
+            y: -100, 
+            opacity: 0, 
+            filter: "blur(5px)"
+        }
+    );
+
+    const servicios = gsap.utils.toArray(".servicios__item");
+
+    servicios.forEach((servicio, i) => {
+        gsap.from(servicio, {
+            scrollTrigger: {
+                trigger: servicio,
+                start: "top 50%",
+                toggleActions: "play pause play reverse",
+            },
+            x: 200,
+            opacity: 0,
+            filter: "blur(10px)",
+        });
+    });
+
     // Sliders timeline
     const slider_tl = gsap.timeline({
         scrollTrigger: {
